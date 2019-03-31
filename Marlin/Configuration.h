@@ -609,14 +609,13 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 94.117647, 94.117647, 400, 96.2752018703336624688889989185642 }
-
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 94.117647, 94.117647, 400, 96.2752018703336624688889989185642,96.275201870333662468889989185642 }
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 2500, 2500, 1100, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 18000, 18000, 1170 , 1600,1600  }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -624,7 +623,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 1800, 1800, 1170, 50 }
+#define DEFAULT_MAX_ACCELERATION      { 1800, 1800, 150 , 2000 ,2000  }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -646,10 +645,10 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 10.0
-#define DEFAULT_YJERK                 10.0
-#define DEFAULT_ZJERK                  0.3
-#define DEFAULT_EJERK                  5.0
+#define DEFAULT_XJERK                 15.0
+#define DEFAULT_YJERK                 15.0
+#define DEFAULT_ZJERK                  10
+#define DEFAULT_EJERK                  20.0
 
 /**
  * S-Curve Acceleration
